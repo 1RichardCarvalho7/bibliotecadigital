@@ -12,7 +12,7 @@ if (file_exists($arquivo)) {
 $usuarios_json = json_decode($conteudo, true); // Converte o conteúdo em json para o padrão que o php entende (array associativo) O true faz o objeto ser convertido em array associativo. Quando está definido como falso retorna um objeto (padrão: false)
 
 if (!$usuarios_json){
-    die("Arquivo de usuários inválido.")
+    die("Arquivo de usuários inválido.");
 }
 
 if (!file_exists($arquivo)) {
