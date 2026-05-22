@@ -1,3 +1,16 @@
-<?php include_once 'includes/header.php'?>
+<?php
 
-<?php include_once 'includes/footer.php'?>
+session_start();
+
+if (!isset($_SESSION['usuario'])) {
+
+    header("Location: login.php");
+
+} else {
+
+    header("Location: biblioteca.php");
+}
+
+exit;
+
+?>

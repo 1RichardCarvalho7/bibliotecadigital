@@ -1,0 +1,24 @@
+<?php
+
+session_start();
+
+$nome = $_POST["nome"];
+$senha = $_POST["senha"];
+
+$arquivo =  __DIR__ . "../data/users.json";
+$conteudo = file_get_contents($arquivo); // Coleta o conteúdo do arquivo (em json)
+$usuarios_json = json_decode($conteudo, true); // Converte o conteúdo em json para o padrão que o php entende (array associativo) O true faz o objeto ser convertido em array associativo. Quando está definido como falso retorna um objeto (padrão: false)
+
+foreach ($usuarios_json as $usuario){
+    if($usuarios_json['nome'] === $nome && password_verify($senha, $usuarios_json['senha'])){ ## Verifica se o nome e a senha correspondem ao nome e a senha (em hash) do arquivo users.json
+
+       $_SESSION['usuario'] = $usuario['nome']; ## Salva a sessão com o nome de usuário correspondente
+
+       header("Location: ../biblioteca.php");
+
+       exit;
+    }
+}
+
+echo "Usuário ou senha inválidos.";
+?>
