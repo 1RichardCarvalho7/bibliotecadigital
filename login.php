@@ -14,5 +14,7 @@
         <input type="text" name="senha" required>
         <button type="submit">Logar</button>
     </form>
+
+    <p>Não possui uma conta? <a href="cadastro.php">Crie aqui!</a></p>
 </body>
 </html>
