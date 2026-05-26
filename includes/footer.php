@@ -1,5 +1,3 @@
     <footer>
-        <p>&copy; date('Y')</p>
+        <p>&copy; <?php echo date('Y'); ?> </p>
     </footer>
-</body>
-</html>
