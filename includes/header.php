@@ -8,6 +8,6 @@
 <body>
     <header>
         <nav>
-            <a href="#">Início</a>
+            <a href="">Início</a>
         </nav>
     </header>
