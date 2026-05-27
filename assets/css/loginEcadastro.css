@@ -1,0 +1,10 @@
+body {
+    background-color:#7F4D2C;
+    font-family: "Lexend Exa", sans-serif;
+}
+.titulo-login {
+    color: #e2af71;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 100px;
+}
