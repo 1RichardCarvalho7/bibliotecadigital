@@ -1,2 +1,3 @@
 .overlay         { display: none; }   /* oculto por padrão */
 .overlay:target  { display: flex; }   /* visível quando URL tem #meu-popup */
+

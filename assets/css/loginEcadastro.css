@@ -1,10 +1,77 @@
 body {
     background-color:#7F4D2C;
     font-family: "Lexend Exa", sans-serif;
+    height: 100vh;
+    align-items: center;
+    margin: 0;
+    display: flex;
 }
-.titulo-login {
-    color: #e2af71;
-    text-align: center;
-    margin-top: 50px;
-    margin-left: 100px;
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+        
 }
+.caixa {
+
+
+}
+.card {
+    margin-left: auto;
+    background-color: #412819;
+    padding: 20px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    width: 600px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.card label {
+    display: block;
+    margin-bottom: 1px;
+    color: #E2AF71;
+}
+.card input {
+    background-color: #E2AF71;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 25px;
+    color: #412819;
+}
+.card button {
+    font-family: "Lexend Exa", sans-serif; 
+    color: #412819;
+    font-size: 25px;
+    background-color: #E2AF71;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: center;
+    margin-top: 45px;
+}
+.linha {
+position: relative;
+text-align: center;
+margin-top: 10px;
+color: #3c00ff;
+}
+.right .left {
+  flex: 1;
+}
+.textao {
+  display: flex;
+  justify-content: flex-start;
+  align-items: right;
+  width: 100%;
+}
+

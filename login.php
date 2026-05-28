@@ -12,15 +12,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h2 class="titulo-login">Entre em sua conta!</h2>
+    <div class="container">
+    <div class="left"></div>
+        <div class="logo"> <img src="assets/img/favicon-32x32.png" alt="Logo"> BookLandy</div>
+        <h1 class="titulo-login">Entre em sua conta!</h1>
+    </div>
     <form action="controllers/login.php" method="post">
-        <label for="nome">Nome</label>
-        <input type="text" name="nome" required>
-        <label for="senha">Senha</label>
-        <input type="text" name="senha" required>
-        <button type="submit">Logar</button>
+        <div class="right"></div>
+            <div class="card">
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" required>
+            <label for="senha">Senha</label>
+            <input type="text" name="senha" required>
+            <button type="submit">Entrar</button>
+        </div>
+    
     </form>
-
-    <p>Não possui uma conta? <a href="cadastro.php">Crie aqui!</a></p>
+    <div class="linha">
+    <p class="p">Não possui uma conta? <a class="a" href="cadastro.php">Crie aqui!</a></p>
+    </div>
 </body>
 </html>
