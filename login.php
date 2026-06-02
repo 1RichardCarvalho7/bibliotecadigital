@@ -13,23 +13,26 @@
 </head>
 <body>
     <div class="container">
-    <div class="left"></div>
-        <div class="logo"> <img src="assets/img/favicon-32x32.png" alt="Logo"> BookLandy</div>
-        <h1 class="titulo-login">Entre em sua conta!</h1>
-    </div>
-    <form action="controllers/login.php" method="post">
-        <div class="right"></div>
-            <div class="card">
-            <label for="nome">Nome</label>
-            <input type="text" name="nome" required>
-            <label for="senha">Senha</label>
-            <input type="text" name="senha" required>
-            <button type="submit">Entrar</button>
+    '    <div class="left">
+            <h1 class="textao">Entre em sua conta!</h1>
         </div>
-    
-    </form>
-    <div class="linha">
-    <p class="p">Não possui uma conta? <a class="a" href="cadastro.php">Crie aqui!</a></p>
+        <div class="right">
+            <form action="controllers/login.php" method="post">
+            
+                <div class="card">
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" required>
+                    <label for="senha">Senha</label>
+                    <input type="text" name="senha" required>
+                    <button type="submit">Entrar</button>
+                </div>
+            
+            </form> 
+            <div class="linha">
+                <p class="p">Não possui uma conta? <a class="a" href="cadastro.php">Crie aqui!</a></p>
+            </div>
+        </div>
     </div>
+    
 </body>
 </html>

@@ -1,51 +1,61 @@
 body {
-    background-color:#7F4D2C;
+    background-color:#8f5d3c;
     font-family: "Lexend Exa", sans-serif;
     height: 100vh;
-    align-items: center;
     margin: 0;
-    display: flex;
 }
 .container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    flex-direction: column;
     height: 100%;
     width: 100%;
         
 }
-.caixa {
-
-
-}
+    form {
+        /* display: flex;
+        justify-content: flex-end; */
+        width: 100%;
+        border: blue solid 5px;
+    }
+    .left {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 50%;
+    }
+    .right{
+        /* display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        border: blue solid 5px; */
+        width: 50%;
+    }
 .card {
-    margin-left: auto;
     background-color: #412819;
-    padding: 20px;
+            padding: 5% 10%;
+
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
-    width: 600px;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    /* width: 600px;
+    height: 400px; */
+
+    
 }
 .card label {
     display: block;
     margin-bottom: 1px;
     color: #E2AF71;
+    p
 }
 .card input {
     background-color: #E2AF71;
-    width: 100%;
+    width: 90%;
     padding: 20px;
     box-sizing: border-box;
     margin-bottom: 15px;
     border: none;
     border-radius: 25px;
     color: #412819;
+    margin: 15px auto;
 }
 .card button {
     font-family: "Lexend Exa", sans-serif; 
@@ -56,22 +66,22 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    align-self: center;
-    margin-top: 45px;
+    margin-top: 60px;
+    margin-left: 200px;
+
+    
 }
 .linha {
-position: relative;
-text-align: center;
-margin-top: 10px;
-color: #3c00ff;
+    /* display: flex-end;     */
+    margin-top: 20px;
+p { color: #E2AF71;}
+a { color:#412819}
 }
-.right .left {
-  flex: 1;
-}
+
+ 
+
 .textao {
   display: flex;
-  justify-content: flex-start;
-  align-items: right;
-  width: 100%;
+  color:#412819;
 }
 
