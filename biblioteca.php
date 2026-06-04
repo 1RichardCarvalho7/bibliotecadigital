@@ -16,13 +16,11 @@
             <input type="file" name="imagem">
             <label for="nome_livro">coloque o nome do livro:</label>
             <input type="text" name="nome_livro">
-            <label for="categoria">
-                categoria:
-            </label>
+            <label for="categoria">categoria:</label>
             <select name="categoria" required>
-            <option value="pretendo_ler">pretendo ler</option>
-            <option value="lendo">lendo</option>
-            <option value="li">li</option>
+                <option value="pretendo_ler">pretendo ler</option>
+                <option value="lendo">lendo</option>
+                <option value="li">li</option>
             </select>
             <button type="submit">enviar</button>
         </form>

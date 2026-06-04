@@ -1,3 +1,8 @@
+<?php 
+session_start();
+?>
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -26,7 +31,12 @@
             <input type="text" name="senha" required>
             <button type="submit">Entrar</button>
         </div>
-    
+        <?php 
+        if (isset($_SESSION['erroerro_credenciaisLogin'])){
+            echo "<p>" . $_SESSION['erroerro_credenciaisLogin'] . "</p>";
+            unset($_SESSION['erroerro_credenciaisLogin']);
+        }
+        ?>
     </form>
     <div class="linha">
     <p class="p">Não possui uma conta? <a class="a" href="cadastro.php">Crie aqui!</a></p>
