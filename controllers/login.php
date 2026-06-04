@@ -32,6 +32,6 @@ foreach ($usuarios_json as $usuario){
 
 $_SESSION['erro_credenciaisLogin'] = "Usuário ou senha inválidos.";
 
-header("Location: login.php");
+header("Location: ../login.php");
 exit();
 ?>
