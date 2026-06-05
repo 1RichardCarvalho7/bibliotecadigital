@@ -20,7 +20,7 @@ foreach ($usuarios_json as $usuario){
 
        $_SESSION['usuario'] = $usuario['nome']; ## Salva a sessão com o nome de usuário correspondente
 
-       header("Location: /biblioteca.php");
+       header("Location: ../biblioteca.php");
 
        exit;
     }
@@ -28,6 +28,6 @@ foreach ($usuarios_json as $usuario){
 
 $_SESSION['erro_credenciaisLogin'] = "Usuário ou senha inválidos.";
         
-header("Location: /login.php");
+header("Location: ../login.php");
 exit();
 ?>
