@@ -11,12 +11,8 @@ if (file_exists($arquivo)) {
 } else{die("Nenhum usuário cadastrado.");}
 $usuarios_json = json_decode($conteudo, true); // Converte o conteúdo em json para o padrão que o php entende (array associativo) O true faz o objeto ser convertido em array associativo. Quando está definido como falso retorna um objeto (padrão: false)
 
-if (!$usuarios_json){
+if (!$usuarios_json === null){
     die("Arquivo de usuários inválido.");
-}
-
-if (!file_exists($arquivo)) {
-    die("Nenhum usuário cadastrado.");
 }
 
 foreach ($usuarios_json as $usuario){
@@ -31,7 +27,7 @@ foreach ($usuarios_json as $usuario){
 }
 
 $_SESSION['erro_credenciaisLogin'] = "Usuário ou senha inválidos.";
-
+        
 header("Location: ../login.php");
 exit();
 ?>

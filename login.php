@@ -28,13 +28,13 @@ session_start();
             <label for="nome">Nome</label>
             <input type="text" name="nome" required>
             <label for="senha">Senha</label>
-            <input type="text" name="senha" required>
+            <input type="password" name="senha" required>
             <button type="submit">Entrar</button>
         </div>
         <?php 
-        if (isset($_SESSION['erroerro_credenciaisLogin'])){
-            echo "<p>" . $_SESSION['erroerro_credenciaisLogin'] . "</p>";
-            unset($_SESSION['erroerro_credenciaisLogin']);
+        if (isset($_SESSION['erro_credenciaisLogin'])){
+            echo "<p>" . $_SESSION['erro_credenciaisLogin'] . "</p>";
+            unset($_SESSION['erro_credenciaisLogin']);
         }
         ?>
     </form>
