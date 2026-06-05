@@ -17,7 +17,7 @@ session_start();
 
     <?php if (isset($_GET['popup']) && $_GET['popup'] === 'abrir'): ?>
     <div id="upload-popup" class="overlay">
-        <a href="biblioteca.php">X</a>
+        <a href="biblioteca.php">ⓧ</a>
         <form action="controllers/upload.php" method="POST" enctype="multipart/form-data">
             <label for="imagem">coloque a capa do livro:</label>
             <input type="file" name="imagem">
