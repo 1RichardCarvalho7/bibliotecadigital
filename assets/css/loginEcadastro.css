@@ -55,6 +55,7 @@ img {
     box-sizing: border-box;
     width: 100%;
     min-height: 500px;
+    position: relative;
 
 }
 .card label {
@@ -87,7 +88,15 @@ img {
     margin-top: 50px;
     margin-left: 300px;
 
-    
+}
+.grr {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    color: #BE6342;
+    font-size: 20px;
+    position: absolute;
+    top: 300px;
+    margin-left: 200px;
+
 }
 .linha {
     position: relative;
@@ -110,5 +119,6 @@ color: #E2AF71}
   font-size: 50px;
   text-align: center;
   width: 500px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 

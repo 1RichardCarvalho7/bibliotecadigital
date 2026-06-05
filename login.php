@@ -35,12 +35,14 @@ session_start();
                     <input type="password" name="senha" required>
                     <button type="submit">Entrar</button>
                 </form> 
+                <div class="grr">
                 <?php 
                 if (isset($_SESSION['erro_credenciaisLogin'])){
                     echo "<p>" . $_SESSION['erro_credenciaisLogin'] . "</p>";
                     unset($_SESSION['erro_credenciaisLogin']);
                 }
                 ?>
+                </div>
             </div>
             
         <div class="linha">
