@@ -1,6 +1,7 @@
 <?php
 
 session_start();
+unset($_SESSION['erro_credenciaisLogin']);
 
 $nome = $_POST["nome"];
 $senha = $_POST["senha"];
@@ -20,7 +21,7 @@ foreach ($usuarios_json as $usuario){
 
        $_SESSION['usuario'] = $usuario['nome']; ## Salva a sessão com o nome de usuário correspondente
 
-       header("Location: /biblioteca.php");
+       header("Location: ../biblioteca.php");
 
        exit;
     }

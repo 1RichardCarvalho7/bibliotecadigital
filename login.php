@@ -18,7 +18,7 @@ session_start();
 </head>
 <body>
     <div class="container">
-    '    <div class="left">
+        <div class="left">
         <img src="assets/imagens/favicon.png" alt="Logo">
         <div class="titulo">
             <span>Bibliolandy</span>
@@ -27,7 +27,6 @@ session_start();
     </div>
     <div class="right">
         <div class="chiclete">
-            <form action="controllers/login.php" method="post">
             <div class="card">
                 <form action="controllers/login.php" method="post">
                     <label for="nome">Nome</label>
