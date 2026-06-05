@@ -8,12 +8,13 @@ session_start();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minha Biblioteca</title>
-    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/imagens/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/biblioteca.css">
 </head>
 <body>
     <?php include_once 'includes/header.php';?>
 
+    
     <div id="upload-popup" class="overlay">
         <form action="controllers/upload.php" method="POST" enctype="multipart/form-data">
             <label for="imagem">coloque a capa do livro:</label>
