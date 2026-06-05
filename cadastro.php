@@ -28,7 +28,7 @@
             <label for="nome">Nome</label>
             <input type="text" name="nome" required>
             <label for="senha">Senha</label>
-            <input type="text" name="senha" required>
+            <input type="password" name="senha" required>
             <button type="submit">Cadastrar</button>
             </form>
             </div>

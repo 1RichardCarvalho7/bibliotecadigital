@@ -1,3 +1,7 @@
+<?php 
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -25,14 +29,19 @@
         <div class="chiclete">
             <form action="controllers/login.php" method="post">
             <div class="card">
-            <form action="controllers/login.php" method="post">
-                
+                <form action="controllers/login.php" method="post">
                     <label for="nome">Nome</label>
                     <input type="text" name="nome" required>
                     <label for="senha">Senha</label>
-                    <input type="text" name="senha" required>
+                    <input type="password" name="senha" required>
                     <button type="submit">Entrar</button>
                 </form> 
+                <?php 
+                if (isset($_SESSION['erro_credenciaisLogin'])){
+                    echo "<p>" . $_SESSION['erro_credenciaisLogin'] . "</p>";
+                    unset($_SESSION['erro_credenciaisLogin']);
+                }
+                ?>
             </div>
             
         <div class="linha">
