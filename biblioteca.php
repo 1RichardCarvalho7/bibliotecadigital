@@ -19,17 +19,17 @@ session_start();
     <div id="upload-popup" class="overlay">
         <a href="biblioteca.php">ⓧ</a>
         <form action="controllers/upload.php" method="POST" enctype="multipart/form-data">
-            <label for="imagem">coloque a capa do livro:</label>
+            <label for="imagem">Coloque a capa do livro:</label>
             <input type="file" name="imagem">
-            <label for="nome_livro">coloque o nome do livro:</label>
+            <label for="nome_livro">Coloque o nome do livro:</label>
             <input type="text" name="nome_livro">
-            <label for="categoria">categoria:</label>
+            <label for="categoria">Categoria:</label>
             <select name="categoria" required>
-                <option value="pretendo_ler">pretendo ler</option>
-                <option value="lendo">lendo</option>
-                <option value="li">li</option>
+                <option value="pretendo_ler">Pretendo ler</option>
+                <option value="lendo">Lendo</option>
+                <option value="li">Lido</option>
             </select>
-            <button type="submit">enviar</button>
+            <button type="submit">Enviar</button>
         </form>
     </div>
     <?php endif; ?>
