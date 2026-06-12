@@ -4,7 +4,7 @@ $novaCategoria = $_POST['categoria'];
 
 $livros = json_decode(file_get_contents('../data/books.json'), true);
 
-foreach ($livros as $livro){
+foreach ($livros as &$livro){
     if ($livro['id'] === $id){
         $livro['categoria'] = $novaCategoria;
 
