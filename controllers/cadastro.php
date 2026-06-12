@@ -26,4 +26,5 @@ $dados = json_encode($usuarios);
 file_put_contents('../data/users.json', $dados);
 
 header('Location: ../login.php');
+exit;
 ?>
