@@ -1,5 +1,10 @@
 <?php
 session_start();
+if (!isset($_SESSION['usuario'])){
+    header("Location: login.php");
+    exit;
+}
+
 $usuario = $_SESSION['usuario'];
 
 $livros = [];
@@ -48,7 +53,7 @@ if (file_exists('data/books.json')){
     <!-- PRIMEIRA CATEGORIA -->
 
 
-    <h2>Pretendo Ler</h2>
+    <h2>Pretendo ler</h2>
      
     <div> <!-- Aqui é onde vai ficar o carrossel -->
         <?php foreach($livros as $livro): ?>
