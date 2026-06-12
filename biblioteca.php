@@ -1,5 +1,12 @@
 <?php
 session_start();
+$usuario = $_SESSION['usuario'];
+
+$livro = [];
+
+if (file_exists('data/books.json')){
+    
+}
 ?>
 
 <!DOCTYPE html>
@@ -25,9 +32,9 @@ session_start();
             <input type="text" name="nome_livro">
             <label for="categoria">Categoria:</label>
             <select name="categoria" required>
-                <option value="pretendo_ler">Pretendo ler</option>
-                <option value="lendo">Lendo</option>
-                <option value="li">Lido</option>
+                <option value="pretendo_ler">pretendo ler</option>
+                <option value="lendo">lendo</option>
+                <option value="li">li</option>
             </select>
             <button type="submit">Enviar</button>
         </form>
