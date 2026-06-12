@@ -31,6 +31,14 @@
             <input type="password" name="senha" required>
             <button type="submit">Cadastrar</button>
             </form>
+
+            <?php 
+                if (isset($_SESSION['erro_usuarioExiste'])){
+                    echo "<p>" . $_SESSION['erro_usuarioExiste'] . "</p>";
+                    unset($_SESSION['erro_usuarioExiste']);
+                }
+            ?>
+
             </div>
             <div class="linha">
                 <p class="p">Já possui uma conta? <a class="a" href="login.php">Faça login aqui!</a></p>

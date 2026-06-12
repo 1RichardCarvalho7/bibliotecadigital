@@ -16,6 +16,38 @@ $tipoDeArquivo = strtolower(
 if($tipoDeArquivo!=='png'){
     die('apenas png<3');
 }
-$nomeDoArquivo = uniqid() .'.png';
 
+$nomeDoArquivo = uniqid() .'.png'; // Cria um nome único para não substituir um arquivo com o mesmo nome
+
+move_uploaded_file(
+    $arquivo_imagem['tmp_name'],
+    '../uploads/' . $nomeDoArquivo
+); // Move o arquivo que sofreu upload para pasta "uploads" e muda o nome temporário para o nome único
+
+$livros = [];
+
+if (file_exists('../data/books.json')){
+    $livros = json_decode(file_get_contents('../data/books.json'),
+    true ) ?? [];
+} // Se o arquivo books.json existir, pega o conteúdo normalmente, se não, atribui um array vazio ao array $livros
+
+$livros[] = [
+    'id' => uniqid(),
+    'usuario' => $usuario,
+    'nome' => $nome_livro,
+    'capa' => $nomeDoArquivo,
+    'categoria' => $categoria
+];
+
+file_put_contents(
+    '../data/books.json',
+    json_encode(
+        $livros,
+        JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE
+    )
+); // Repõe o conteúdo com a adição, formatando o json
+
+
+header('Location: ../biblioteca.php');
+exit;
 ?>

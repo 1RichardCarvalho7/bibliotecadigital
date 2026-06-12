@@ -2,10 +2,13 @@
 session_start();
 $usuario = $_SESSION['usuario'];
 
-$livro = [];
+$livros = [];
 
 if (file_exists('data/books.json')){
-    
+    $livros = json_decode(
+        file_get_contents('data/books.json'),
+        true
+    ) ?? [];
 }
 ?>
 
@@ -32,14 +35,125 @@ if (file_exists('data/books.json')){
             <input type="text" name="nome_livro">
             <label for="categoria">Categoria:</label>
             <select name="categoria" required>
-                <option value="pretendo_ler">pretendo ler</option>
-                <option value="lendo">lendo</option>
-                <option value="li">li</option>
+                <option value="pretendo_ler">Pretendo ler</option>
+                <option value="lendo">Lendo</option>
+                <option value="lido">Lido</option>
             </select>
             <button type="submit">Enviar</button>
         </form>
     </div>
     <?php endif; ?>
+
+        
+    <!-- PRIMEIRA CATEGORIA -->
+
+
+    <h2>Pretendo Ler</h2>
+     
+    <div> <!-- Aqui é onde vai ficar o carrossel -->
+        <?php foreach($livros as $livro): ?>
+            <?php 
+            if(
+                $livro['usuario'] !== $usuario ||
+                $livro['categoria'] !== 'pretendo_ler'
+            )    {
+                continue;
+            }
+            ?>
+
+            <div> <!-- Aqui é onde vai ficar o card do livro -->
+                <img src="uploads/<?= htmlspecialchars($livro['capa']) ?>" alt="<?= htmlspecialchars($livro['nome']) ?>"> <!-- Imagem da capa do livro -->
+                <h3> <?= htmlspecialchars($livro['nome']) ?></h3> <!-- Nome do livro -->
+
+                <form action="controllers/mudarCategoria.php" method="post"> <!-- Botão para trocar de categoria -->
+                    <input type="hidden" name="id" value="<?= $livro['id'] ?>">
+                    
+                    <select name="categoria" id="">
+                        <option value="pretendo_ler">Pretendo ler</option>
+                        <option value="lendo">Lendo</option>
+                        <option value="lido">Lido</option>
+                    </select>
+                    <button type="submit">Mudar</button>
+                </form>
+
+            </div>
+        <?php endforeach; ?>
+    </div>
+
+
+
+    <!-- SEGUNDA CATEGORIA -->
+
+
+
+    <h2>Lendo</h2> 
+
+    <div> <!-- Aqui é onde vai ficar o carrossel -->
+        <?php foreach($livros as $livro): ?>
+            <?php 
+            if(
+                $livro['usuario'] !== $usuario ||
+                $livro['categoria'] !== 'lendo'
+            )    {
+                continue;
+            }
+            ?>
+
+            <div> <!-- Aqui é onde vai ficar o card do livro -->
+                <img src="uploads/<?= htmlspecialchars($livro['capa']) ?>" alt="<?= htmlspecialchars($livro['nome']) ?>"> <!-- Imagem da capa do livro -->
+                <h3> <?= htmlspecialchars($livro['nome']) ?></h3> <!-- Nome do livro -->
+
+                <form action="controllers/mudarCategoria.php" method="post"> <!-- Botão para trocar de categoria -->
+                    <input type="hidden" name="id" value="<?= $livro['id'] ?>">
+                    
+                    <select name="categoria" id="">
+                        <option value="pretendo_ler">Pretendo ler</option>
+                        <option value="lendo">Lendo</option>
+                        <option value="lido">Lido</option>
+                    </select>
+                    <button type="submit">Mudar</button>
+                </form>
+
+            </div>
+        <?php endforeach; ?>
+    </div>
+
+
+    <!-- TERCEIRA CATEGORIA -->
+
+
+    <h2>Lidos</h2>
+
+    <div> <!-- Aqui é onde vai ficar o carrossel -->
+        <?php foreach($livros as $livro): ?>
+            <?php 
+            if(
+                $livro['usuario'] !== $usuario ||
+                $livro['categoria'] !== 'lido'
+            )    {
+                continue;
+            }
+            ?>
+
+            <div> <!-- Aqui é onde vai ficar o card do livro -->
+                <img src="uploads/<?= htmlspecialchars($livro['capa']) ?>" alt="<?= htmlspecialchars($livro['nome']) ?>"> <!-- Imagem da capa do livro -->
+                <h3> <?= htmlspecialchars($livro['nome']) ?></h3> <!-- Nome do livro -->
+
+                <form action="controllers/mudarCategoria.php" method="post"> <!-- Botão para trocar de categoria -->
+                    <input type="hidden" name="id" value="<?= $livro['id'] ?>">
+                    
+                    <select name="categoria" id="">
+                        <option value="pretendo_ler">Pretendo ler</option>
+                        <option value="lendo">Lendo</option>
+                        <option value="lido">Lido</option>
+                    </select>
+                    <button type="submit">Mudar</button>
+                </form>
+
+            </div>
+        <?php endforeach; ?>
+    </div>
+
     <?php include_once 'includes/footer.php';?>
 </body>
 </html>
