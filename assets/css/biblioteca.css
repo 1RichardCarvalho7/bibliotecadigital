@@ -1,5 +1,5 @@
 body {
-    background-color: #8f5d3c;
+    background: linear-gradient(to right, #412819, #8f5d3c);
     font-family: "Lexend Exa", sans-serif;
     min-height: 100vh;
     margin: 0;
@@ -35,6 +35,7 @@ header {
     height: 75px;
     box-sizing: border-box;
     overflow: hidden;
+    
 }
 header nav span {
     color: #E2AF71;
@@ -49,7 +50,7 @@ footer {
     text-align: center;
     padding: 10px;
     width: 100%;
-    background: linear-gradient(to bottom, #8f5d3c, #4d3222);
+    background-color: #412819;
     margin-top: auto;
 }
 .logo {
@@ -172,25 +173,7 @@ button.sair {
     border-style:double;
     margin-top: 10px;
 }
-.carrossel2 {
-    display: flex;
-    overflow-x: auto;
-    gap: 10px;
-    background: linear-gradient(to bottom, #E2AF71, #8f5d3c);
-    padding: 10px;
-    min-height: 220px;
-    
-       
-}
-.carrossel3 {
-    display: flex;
-    overflow-x: auto;
-    gap: 10px;
-    background: linear-gradient(to bottom, #E2AF71, #8f5d3c);
-    padding: 10px;
-    min-height: 220px;
-    
-}
+
 .item {
     display: flex;
     flex-direction: column;
@@ -240,4 +223,11 @@ h2 {
 
 .carrossel::-webkit-scrollbar {
     display: none; 
+}
+.categoria {
+    margin-top: 15px;
+}
+
+.categoria:first-of-type {
+    margin-top: 150px;
 }

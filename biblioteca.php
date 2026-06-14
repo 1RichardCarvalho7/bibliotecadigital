@@ -54,7 +54,7 @@ if (file_exists('data/books.json')){
         
     <!-- PRIMEIRA CATEGORIA -->
 
-
+    <div class="categoria">
     <h2>Pretendo ler</h2>
      
     <div class="carrossel"> <!-- Aqui é onde vai ficar o carrossel -->
@@ -88,16 +88,17 @@ if (file_exists('data/books.json')){
             </div>
         <?php endforeach; ?>
     </div>
+</div>
 
 
 
     <!-- SEGUNDA CATEGORIA -->
 
 
-
+    <div class="categoria">
     <h2>Lendo</h2> 
 
-    <div class="carrossel2"> <!-- Aqui é onde vai ficar o carrossel -->
+    <div class="carrossel"> <!-- Aqui é onde vai ficar o carrossel -->
         <?php foreach($livros as $livro): ?>
             <?php 
             if(
@@ -126,14 +127,15 @@ if (file_exists('data/books.json')){
             </div>
         <?php endforeach; ?>
     </div>
+</div>
 
-
+    
     <!-- TERCEIRA CATEGORIA -->
-
+    <div class="categoria">
 
     <h2>Lidos</h2>
 
-    <div class="carrossel3"> <!-- Aqui é onde vai ficar o carrossel -->
+    <div class="carrossel"> <!-- Aqui é onde vai ficar o carrossel -->
         <?php foreach($livros as $livro): ?>
             <?php 
             if(
@@ -162,6 +164,7 @@ if (file_exists('data/books.json')){
             </div>
         <?php endforeach; ?>
     </div>
+</div>
 </div>
     <?php include_once 'includes/footer.php';?>
 </body>
