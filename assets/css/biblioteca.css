@@ -161,26 +161,30 @@ button.sair {
     display: flex;
     overflow-x: auto;
     gap: 10px;
-    background: linear-gradient(to bottom, #7c7935, #412819);
+    background: linear-gradient(to bottom, #E2AF71, #8f5d3c);
     padding: 10px;
     min-height: 220px;
-    border-color: #412819;
-    border-width: 5px;
-    border-style: solid;
+    
+    
 }
 .carrossel2 {
     display: flex;
     overflow-x: auto;
-    gap: 20px;
+    gap: 10px;
+    background: linear-gradient(to bottom, #E2AF71, #8f5d3c);
+    padding: 10px;
+    min-height: 220px;
+    
        
 }
 .carrossel3 {
     display: flex;
     overflow-x: auto;
-    gap: 30px;
-    background-color: #412819;
+    gap: 10px;
+    background: linear-gradient(to bottom, #E2AF71, #8f5d3c);
     padding: 10px;
     min-height: 220px;
+    
 }
 .item {
     display: flex;
@@ -220,4 +224,5 @@ h2 {
     color: #E2AF71;
     margin-left: 20px;
     font-family: "Lexend Exa", sans-serif;
+    margin-bottom: 5px;
 }
