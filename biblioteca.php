@@ -28,7 +28,9 @@ if (file_exists('data/books.json')){
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <?php include_once 'includes/header.php';?>
+    <div class="conteudo">
+        <?php include_once 'includes/header.php';?>
+    
 
     <?php if (isset($_GET['popup']) && $_GET['popup'] === 'abrir'): ?>
     <div id="upload-popup" class="overlay">
@@ -95,7 +97,7 @@ if (file_exists('data/books.json')){
 
     <h2>Lendo</h2> 
 
-    <div> <!-- Aqui é onde vai ficar o carrossel -->
+    <div class="carrossel2"> <!-- Aqui é onde vai ficar o carrossel -->
         <?php foreach($livros as $livro): ?>
             <?php 
             if(
@@ -105,8 +107,8 @@ if (file_exists('data/books.json')){
                 continue;
             }
             ?>
-
-            <div> <!-- Aqui é onde vai ficar o card do livro -->
+            <div class="item"> <!-- Aqui é onde vai ficar o card do livro -->
+            
                 <img src="uploads/<?= htmlspecialchars($livro['capa']) ?>" alt="<?= htmlspecialchars($livro['nome']) ?>"> <!-- Imagem da capa do livro -->
                 <h3> <?= htmlspecialchars($livro['nome']) ?></h3> <!-- Nome do livro -->
 
@@ -131,7 +133,7 @@ if (file_exists('data/books.json')){
 
     <h2>Lidos</h2>
 
-    <div> <!-- Aqui é onde vai ficar o carrossel -->
+    <div class="carrossel3"> <!-- Aqui é onde vai ficar o carrossel -->
         <?php foreach($livros as $livro): ?>
             <?php 
             if(
@@ -141,8 +143,8 @@ if (file_exists('data/books.json')){
                 continue;
             }
             ?>
-
-            <div> <!-- Aqui é onde vai ficar o card do livro -->
+            <div class="item"><!-- Aqui é onde vai ficar o card do livro -->
+             
                 <img src="uploads/<?= htmlspecialchars($livro['capa']) ?>" alt="<?= htmlspecialchars($livro['nome']) ?>"> <!-- Imagem da capa do livro -->
                 <h3> <?= htmlspecialchars($livro['nome']) ?></h3> <!-- Nome do livro -->
 
@@ -160,7 +162,7 @@ if (file_exists('data/books.json')){
             </div>
         <?php endforeach; ?>
     </div>
-
+</div>
     <?php include_once 'includes/footer.php';?>
 </body>
 </html>

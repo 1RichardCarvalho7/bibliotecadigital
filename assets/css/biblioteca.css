@@ -1,9 +1,10 @@
 body {
     background-color: #8f5d3c;
     font-family: "Lexend Exa", sans-serif;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
     width: 100%;
 }
 nav {
@@ -12,6 +13,9 @@ nav {
     width: 100%;
     height: 75px;
     overflow: hidden;
+}
+.conteudo {
+    min-height: calc(100vh - 70px);
 }
 .container {
     display: flex;
@@ -32,15 +36,6 @@ header {
     box-sizing: border-box;
     overflow: hidden;
 }
-header nav a {
-    color: #E2AF71;
-    text-decoration: none;
-    margin-left: 250px;
-    font-size: 18px;
-    letter-spacing: 3px;
-     top: 20px;
- 
-}
 header nav span {
     color: #E2AF71;
     font-size: 24px;
@@ -53,10 +48,9 @@ footer {
     color: #E2AF71;
     text-align: center;
     padding: 10px;
-    position: fixed;
-    bottom: 0;
     width: 100%;
     background: linear-gradient(to bottom, #8f5d3c, #4d3222);
+    margin-top: auto;
 }
 .logo {
     height: 40px;
@@ -164,14 +158,39 @@ button.sair {
     display: flex;
     overflow-x: auto;
     gap: 10px;
+    background: linear-gradient(to bottom, #7c7935, #412819);
+    padding: 10px;
+    min-height: 220px;
+    border-color: #412819;
+    border-width: 5px;
+    border-style: solid;
+}
+.carrossel2 {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+       
+}
+.carrossel3 {
+    display: flex;
+    overflow-x: auto;
+    gap: 30px;
+    background-color: #412819;
+    padding: 10px;
+    min-height: 220px;
 }
 
 .item {
-    min-width: 200px;
+    min-width: 150px;
     flex-shrink: 0;
+    color: #E2AF71;
 }
 .item img {
-    width: 150px;
-    height: 220px;
+    width: 100px;
+    height: 170px;
     object-fit: cover;
+}
+h2 {
+    color: #E2AF71;
+    margin-left: 20px;
 }

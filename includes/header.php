@@ -17,7 +17,6 @@
             <div class="esquerda">
             <img src="assets/imagens/favicon.png" class="logo">
             <span>Bibliolandy</span>
-            <a href="biblioteca.php">Home</a>
             
             </div>
             <div class="direita">
@@ -27,7 +26,6 @@
 
             <div class="user">
                 <?= htmlspecialchars($_SESSION['usuario']) ?>     <!-- Exibe o nome de usuário da sessão atual -->
-                
             </div>
             <form action="controllers/logout.php" method="POST">
                 <button type="submit" class="sair">
