@@ -11,13 +11,41 @@
         "usuario": "richard",
         "nome": "unque3",
         "capa": "6a2e108d86efc.png",
-        "categoria": "lido"
+        "categoria": "pretendo_ler"
     },
     {
         "id": "6a2e10a9dad63",
         "usuario": "richard",
         "nome": "unque1",
         "capa": "6a2e10a9da84f.png",
+        "categoria": "pretendo_ler"
+    },
+    {
+        "id": "6a2ed6b178c45",
+        "usuario": "richard",
+        "nome": "tik",
+        "capa": "6a2ed6b177fb0.png",
+        "categoria": "pretendo_ler"
+    },
+    {
+        "id": "6a2ed6bc6c549",
+        "usuario": "richard",
+        "nome": "tiko",
+        "capa": "6a2ed6bc6c06b.png",
+        "categoria": "pretendo_ler"
+    },
+    {
+        "id": "6a2ed6c8a64f9",
+        "usuario": "richard",
+        "nome": "grelo",
+        "capa": "6a2ed6c8a5c10.png",
+        "categoria": "pretendo_ler"
+    },
+    {
+        "id": "6a2ed6ecf0b17",
+        "usuario": "richard",
+        "nome": "lele",
+        "capa": "6a2ed6ecf0587.png",
         "categoria": "pretendo_ler"
     }
 ]
