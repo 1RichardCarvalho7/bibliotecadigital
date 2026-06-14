@@ -125,6 +125,9 @@ footer {
     border-radius: 10px;
     height: 35px;
     cursor: pointer;
+    color:#412819;
+    background-color:#E2AF71;
+    font-family: "Lexend Exa", sans-serif;
 }
 #upload-popup input[type="file"] {
     border-radius: 10px;
@@ -179,11 +182,34 @@ button.sair {
     padding: 10px;
     min-height: 220px;
 }
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.item option {
+    font-family: "Lexend Exa", sans-serif;
+    border-radius: 7px;
+}
+.item select {
+    font-family: "Lexend Exa", sans-serif;
+    color:#412819;
+    background-color:#E2AF71
+}
+
+.item button {
+    border-radius: 7px;
+    background-color: #E2AF71;
+    color:#412819;
+    height: 25px;
+    font-family: "Lexend Exa", sans-serif;
+}
 
 .item {
     min-width: 150px;
     flex-shrink: 0;
     color: #E2AF71;
+    font-family: "Lexend Exa", sans-serif;
 }
 .item img {
     width: 100px;
@@ -193,4 +219,5 @@ button.sair {
 h2 {
     color: #E2AF71;
     margin-left: 20px;
+    font-family: "Lexend Exa", sans-serif;
 }
