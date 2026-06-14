@@ -84,7 +84,7 @@ footer {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #412819;
-    padding: 5% 5%;
+    padding: 2% 2%;
     border-radius: 10px;
     height: 300px;
     width: 300px;
@@ -158,4 +158,20 @@ button.sair {
     right: 100px;
     top: 24px;
     position: absolute;
+}
+
+.carrossel {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+}
+
+.item {
+    min-width: 200px;
+    flex-shrink: 0;
+}
+.item img {
+    width: 150px;
+    height: 220px;
+    object-fit: cover;
 }

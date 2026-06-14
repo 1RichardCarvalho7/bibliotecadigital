@@ -55,7 +55,7 @@ if (file_exists('data/books.json')){
 
     <h2>Pretendo ler</h2>
      
-    <div> <!-- Aqui é onde vai ficar o carrossel -->
+    <div class="carrossel"> <!-- Aqui é onde vai ficar o carrossel -->
         <?php foreach($livros as $livro): ?>
             <?php 
             if(
@@ -65,8 +65,10 @@ if (file_exists('data/books.json')){
                 continue;
             }
             ?>
-
-            <div> <!-- Aqui é onde vai ficar o card do livro -->
+     <div class="item">
+    
+            
+            <!-- Aqui é onde vai ficar o card do livro -->
                 <img src="uploads/<?= htmlspecialchars($livro['capa']) ?>" alt="<?= htmlspecialchars($livro['nome']) ?>"> <!-- Imagem da capa do livro -->
                 <h3> <?= htmlspecialchars($livro['nome']) ?></h3> <!-- Nome do livro -->
 
