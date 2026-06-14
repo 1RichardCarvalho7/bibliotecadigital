@@ -75,7 +75,7 @@ footer {
     height: 55px;
     position: absolute;
     top: 5px;
-    right: 100px;
+    right: 200px;
 }
 
 #upload-popup {
@@ -137,4 +137,25 @@ footer {
     height: 30px;
     padding: 5px;
     cursor: pointer;
+}
+button.sair {
+    font-family: "Lexend Exa", sans-serif;
+    font-size: 16px;
+     position: absolute;
+    margin-top: 20px;
+    background-color: #E2AF71;
+    color: #412819;
+    border: none;
+    cursor: pointer;
+    right: 30px;
+    height: 30px;
+    width: 60px;
+    border-radius: 10px;
+}
+.user {
+    color: #E2AF71;
+    font-size: 18px;
+    right: 100px;
+    top: 24px;
+    position: absolute;
 }
