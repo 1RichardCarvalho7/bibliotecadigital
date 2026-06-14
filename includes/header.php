@@ -37,4 +37,7 @@
         </div>
         </nav>
     </header>
+    <h3>"A leitura do mundo precede a leitura da palavra."<br>
+         — Paulo Freire
+    </h3>
 </body>

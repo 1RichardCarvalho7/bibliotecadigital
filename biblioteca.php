@@ -28,7 +28,9 @@ if (file_exists('data/books.json')){
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
+    
     <div class="conteudo">
+        
         <?php include_once 'includes/header.php';?>
     
 
@@ -72,7 +74,7 @@ if (file_exists('data/books.json')){
             
             <!-- Aqui é onde vai ficar o card do livro -->
                 <img src="uploads/<?= htmlspecialchars($livro['capa']) ?>" alt="<?= htmlspecialchars($livro['nome']) ?>"> <!-- Imagem da capa do livro -->
-                <h3> <?= htmlspecialchars($livro['nome']) ?></h3> <!-- Nome do livro -->
+                <div class="tic"> <?= htmlspecialchars($livro['nome']) ?></div> <!-- Nome do livro -->
 
                 <form action="controllers/mudarCategoria.php" method="post"> <!-- Botão para trocar de categoria -->
                     <input type="hidden" name="id" value="<?= $livro['id'] ?>">
@@ -111,7 +113,7 @@ if (file_exists('data/books.json')){
             <div class="item"> <!-- Aqui é onde vai ficar o card do livro -->
             
                 <img src="uploads/<?= htmlspecialchars($livro['capa']) ?>" alt="<?= htmlspecialchars($livro['nome']) ?>"> <!-- Imagem da capa do livro -->
-                <h3> <?= htmlspecialchars($livro['nome']) ?></h3> <!-- Nome do livro -->
+                <div class="tic"> <?= htmlspecialchars($livro['nome']) ?></div> <!-- Nome do livro -->
 
                 <form action="controllers/mudarCategoria.php" method="post"> <!-- Botão para trocar de categoria -->
                     <input type="hidden" name="id" value="<?= $livro['id'] ?>">
@@ -148,7 +150,7 @@ if (file_exists('data/books.json')){
             <div class="item"><!-- Aqui é onde vai ficar o card do livro -->
              
                 <img src="uploads/<?= htmlspecialchars($livro['capa']) ?>" alt="<?= htmlspecialchars($livro['nome']) ?>"> <!-- Imagem da capa do livro -->
-                <h3> <?= htmlspecialchars($livro['nome']) ?></h3> <!-- Nome do livro -->
+                <div class="tic"> <?= htmlspecialchars($livro['nome']) ?></div> <!-- Nome do livro -->
 
                 <form action="controllers/mudarCategoria.php" method="post"> <!-- Botão para trocar de categoria -->
                     <input type="hidden" name="id" value="<?= $livro['id'] ?>">
