@@ -13,7 +13,7 @@ $tipoDeArquivo = strtolower(
         PATHINFO_EXTENSION
     )
 ); // Procura o endereço e pega apenas o tipo do arquivo (ex: "png")
-if(($tipoDeArquivo!=='png') || ($tipoDeArquivo!=='jpg')){
+if(($tipoDeArquivo!=='png') && ($tipoDeArquivo!=='jpg')){
      $_SESSION['erro_tipoArquivo'] = "Tipo de arquivo incorreto! (apenas png/jpg)";
      header('Location: ../biblioteca.php');
      exit;
