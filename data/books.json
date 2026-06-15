@@ -1,2 +1,100 @@
 [
+    {
+        "id": "6a2fe5fba9412",
+        "usuario": "richard",
+        "nome": "A metamorfose",
+        "capa": "6a2fe5fba889c.png",
+        "categoria": "pretendo_ler"
+    },
+    {
+        "id": "6a2fe6111f7f7",
+        "usuario": "richard",
+        "nome": "O idiota",
+        "capa": "6a2fe6111ebb0.png",
+        "categoria": "pretendo_ler"
+    },
+    {
+        "id": "6a2fe6229f3b9",
+        "usuario": "richard",
+        "nome": "Memórias do subsolo",
+        "capa": "6a2fe6229eb07.png",
+        "categoria": "pretendo_ler"
+    },
+    {
+        "id": "6a2fe631d88de",
+        "usuario": "richard",
+        "nome": "Noites brancas",
+        "capa": "6a2fe631d7e76.png",
+        "categoria": "pretendo_ler"
+    },
+    {
+        "id": "6a2fe66c6ddd1",
+        "usuario": "richard",
+        "nome": "Teste",
+        "capa": "6a2fe66c6d6e9.png",
+        "categoria": "pretendo_ler"
+    },
+    {
+        "id": "6a2fe686a75dd",
+        "usuario": "richard",
+        "nome": "Zarathustra",
+        "capa": "6a2fe686a6a84.png",
+        "categoria": "pretendo_ler"
+    },
+    {
+        "id": "6a2fe693d4fd4",
+        "usuario": "richard",
+        "nome": "O anticristo",
+        "capa": "6a2fe693d47bb.png",
+        "categoria": "pretendo_ler"
+    },
+    {
+        "id": "6a2fe6cb4f411",
+        "usuario": "richard",
+        "nome": "Nascimento da tragédia",
+        "capa": "6a2fe6cb4e5d6.png",
+        "categoria": "lendo"
+    },
+    {
+        "id": "6a2fe77499e33",
+        "usuario": "richard",
+        "nome": "vidas secas",
+        "capa": "6a2fe77498e93.png",
+        "categoria": "lendo"
+    },
+    {
+        "id": "6a2fe7887df56",
+        "usuario": "richard",
+        "nome": "Angústia",
+        "capa": "6a2fe7887cd2d.png",
+        "categoria": "lendo"
+    },
+    {
+        "id": "6a2fe79c45aad",
+        "usuario": "richard",
+        "nome": "Cartas a Milena",
+        "capa": "6a2fe79c436c6.png",
+        "categoria": "lendo"
+    },
+    {
+        "id": "6a2fe7e911341",
+        "usuario": "richard",
+        "nome": "Carta ao pai",
+        "capa": "6a2fe7e91063e.png",
+        "categoria": "lendo"
+    },
+    {
+        "id": "6a2fe818e7382",
+        "usuario": "richard",
+        "nome": "O alienista",
+        "capa": "6a2fe818e654c.png",
+        "categoria": "lendo"
+    },
+    {
+        "id": "6a2fe86207393",
+        "usuario": "richard",
+        "nome": "O castelo",
+        "capa": "6a2fe8620675e.png",
+        "categoria": "lendo"
+    }
 ]
