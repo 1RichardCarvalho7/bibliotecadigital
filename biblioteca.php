@@ -47,7 +47,6 @@ if (file_exists('data/books.json')){
                 <option value="pretendo_ler">Pretendo ler</option>
                 <option value="lendo">Lendo</option>
                 <option value="lido">Lido</option>
-                <option value="remover">Remover</option>
             </select>
             <button type="submit">Enviar</button>
         </form>
@@ -94,6 +93,7 @@ if (file_exists('data/books.json')){
                         <option value="pretendo_ler">Pretendo ler</option>
                         <option value="lendo">Lendo</option>
                         <option value="lido">Lido</option>
+                        <option value="remover">Remover</option>
                     </select>
                     <button type="submit">Mudar</button>
                 </form>
@@ -133,6 +133,7 @@ if (file_exists('data/books.json')){
                         <option value="pretendo_ler">Pretendo ler</option>
                         <option value="lendo">Lendo</option>
                         <option value="lido">Lido</option>
+                        <option value="remover">Remover</option>
                     </select>
                     <button type="submit">Mudar</button>
                 </form>
