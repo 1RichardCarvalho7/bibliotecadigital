@@ -84,6 +84,7 @@ footer {
     height: 300px;
     width: 300px;
     z-index: 999;
+    gap: px;
 }
 #upload-popup a {
     position: absolute;
@@ -100,6 +101,7 @@ footer {
     font-size: 18px;
     margin-top: -25px;
     padding: 0;
+    gap: 0px;
 }
 #upload-popup label {
     margin-top: 15px;
@@ -243,5 +245,7 @@ h3 {
 }
 .kuckuc {
     color:#b0ae47;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
     
 }
