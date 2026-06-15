@@ -15,7 +15,7 @@ $tipoDeArquivo = strtolower(
 ); // Procura o endereço e pega apenas o tipo do arquivo (ex: "png")
 if(($tipoDeArquivo!=='png') && ($tipoDeArquivo!=='jpg')){
      $_SESSION['erro_tipoArquivo'] = "Tipo de arquivo incorreto! (apenas png/jpg)";
-     header('Location: ../biblioteca.php');
+     header('Location: ../biblioteca.php?popup=abrir');
      exit;
 }
 
@@ -50,6 +50,6 @@ file_put_contents(
 ); // Repõe o conteúdo com a adição, formatando o json
 
 
-header('Location: ../biblioteca.php');
+header('Location: ../biblioteca.php?popup=abrir');
 exit;
 ?>
