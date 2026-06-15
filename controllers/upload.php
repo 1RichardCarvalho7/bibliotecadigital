@@ -13,8 +13,10 @@ $tipoDeArquivo = strtolower(
         PATHINFO_EXTENSION
     )
 ); // Procura o endereço e pega apenas o tipo do arquivo (ex: "png")
-if($tipoDeArquivo!=='png'){
-    die('apenas png<3');
+if(($tipoDeArquivo!=='png') || ($tipoDeArquivo!=='jpg')){
+     $_SESSION['erro_tipoArquivo'] = "Tipo de arquivo incorreto! (apenas png/jpg)";
+     header('Location: ../biblioteca.php');
+     exit;
 }
 
 $nomeDoArquivo = uniqid() .'.png'; // Cria um nome único para não substituir um arquivo com o mesmo nome

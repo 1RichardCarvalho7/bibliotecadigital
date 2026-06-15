@@ -50,6 +50,14 @@ if (file_exists('data/books.json')){
             </select>
             <button type="submit">Enviar</button>
         </form>
+        
+        <?php 
+            if (isset($_SESSION['erro_tipoArquivo'])){
+                echo "<p>" . $_SESSION['erro_tipoArquivo'] . "</p>";
+                unset($_SESSION['erro_tipoArquivo']);
+            }
+        ?>
+
     </div>
     <?php endif; ?>
 
