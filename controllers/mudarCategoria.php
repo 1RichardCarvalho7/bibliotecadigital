@@ -5,7 +5,7 @@ $novaCategoria = $_POST['categoria']; // Pega o valor da categoria que o usuári
 $livros = json_decode(file_get_contents('../data/books.json'), true);
 
 foreach ($livros as $indice => $livro){
-    if ($livro['id'] === $id){
+    if ($livro['id'] == $id){
         if ($novaCategoria == "remover"){
             $arquivoImagem = '../uploads/' . $livro['capa']; //Remove a imagem da capa
             if (file_exists($arquivoImagem)){
@@ -13,7 +13,7 @@ foreach ($livros as $indice => $livro){
             }
             unset($livros[$indice]);
         } else{
-            $livro['categoria'] = $novaCategoria;
+            $livros[$indice]['categoria'] = $novaCategoria;
         }
 
         break;
