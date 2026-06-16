@@ -21,7 +21,7 @@ if(($tipoDeArquivo!=='png') && ($tipoDeArquivo!=='jpg')){
      exit;
 }
 
-$nomeDoArquivo = uniqid() .'.png'; // Cria um nome único para não substituir um arquivo com o mesmo nome
+$nomeDoArquivo = uniqid() .'.' . $tipoDeArquivo; // Cria um nome único para não substituir um arquivo com o mesmo nome
 
 move_uploaded_file(
     $arquivo_imagem['tmp_name'],

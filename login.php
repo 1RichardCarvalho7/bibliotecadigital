@@ -41,6 +41,11 @@ session_start();
                     echo "<p>" . $_SESSION['erro_credenciaisLogin'] . "</p>";
                     unset($_SESSION['erro_credenciaisLogin']);
                 }
+
+                if (isset($_SESSION['arquivo_invalido'])){
+                    echo "<p>" . $_SESSION['arquivo_invalido'] . "</p>";
+                    unset($_SESSION['arquivo_invalido']);
+                }
                 ?>
                 </div>
             </div>

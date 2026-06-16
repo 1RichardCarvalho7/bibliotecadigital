@@ -19,13 +19,6 @@ if (file_exists('data/books.json')){
 
 
 
-
-
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -59,14 +52,21 @@ if (file_exists('data/books.json')){
             </select>
             <button type="submit">Enviar</button>
 
-<div class="kuckuc">
-        <?php 
-            if (isset($_SESSION['erro_tipoArquivo'])){
-                echo "<p>" . $_SESSION['erro_tipoArquivo'] . "</p>";
-                unset($_SESSION['erro_tipoArquivo']);
-            }
-        ?>
-        </div>
+            <div class="kuckuc">
+            <?php 
+                if (isset($_SESSION['erro_tipoArquivo'])){
+                    echo "<p>" . $_SESSION['erro_tipoArquivo'] . "</p>";
+                    unset($_SESSION['erro_tipoArquivo']);
+                }
+            ?>
+
+            <?php 
+                if (isset($_SESSION['erro_upload'])){
+                    echo "<p>" . $_SESSION['erro_upload'] . "</p>";
+                    unset($_SESSION['erro_upload']);
+                }
+            ?>
+            </div>
         </form>
         
         
@@ -180,6 +180,6 @@ if (file_exists('data/books.json')){
         </div>
     </div>
 </div>
-    <?php include_once 'includes/footer.php';?>
+<?php include_once 'includes/footer.php';?>
 </body>
 </html>

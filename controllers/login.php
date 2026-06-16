@@ -9,11 +9,13 @@ $senha = $_POST["senha"];
 $arquivo =  __DIR__ . "/../data/users.json";
 if (file_exists($arquivo)) {
     $conteudo = file_get_contents($arquivo); // Coleta o conteúdo do arquivo (em json)
-} else{die("Nenhum usuário cadastrado.");}
+} else{
+    $_SESSION['erro_nenhumUsuario'] = "Nenhum usuário cadastrado.";
+    }
 $usuarios_json = json_decode($conteudo, true); // Converte o conteúdo em json para o padrão que o php entende (array associativo) O true faz o objeto ser convertido em array associativo. Quando está definido como falso retorna um objeto (padrão: false)
 
 if ($usuarios_json === null){
-    die("Arquivo de usuários inválido.");
+    $_SESSION['arquivo_invalido'] = "Arquivo de usuários inválido!";
 }
 
 foreach ($usuarios_json as $usuario){
