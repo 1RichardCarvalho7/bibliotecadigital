@@ -41,9 +41,9 @@ if (file_exists('data/books.json')){
         <a href="biblioteca.php">ⓧ</a>
         <form action="controllers/upload.php" method="POST" enctype="multipart/form-data">
             <label for="imagem">Coloque a capa do livro:</label>
-            <input type="file" name="imagem">
+            <input type="file" name="imagem" required>
             <label for="nome_livro">Coloque o nome do livro:</label>
-            <input type="text" name="nome_livro">
+            <input type="text" name="nome_livro" required>
             <label for="categoria">Categoria:</label>
             <select name="categoria" required>
                 <option value="pretendo_ler">Pretendo ler</option>
