@@ -228,6 +228,7 @@ h2 {
 }
 .categoria {
     margin-top: 15px;
+
 }
 
 .categoria:first-of-type {
@@ -244,8 +245,9 @@ h3 {
     font-size: 20px;
 }
 .kuckuc {
-    color:#b0ae47;
+    color:#E2AF71;
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-    
+    margin-top: -120px;
+    font-size: 15px;
 }
