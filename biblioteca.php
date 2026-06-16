@@ -102,6 +102,7 @@ if (file_exists('data/books.json')){
                         <input type="hidden" name="id" value="<?= $livro['id'] ?>">
         
                         <select name="categoria" id="">
+                            <option value="" selected disabled></option>
                             <option value="pretendo_ler">Pretendo ler</option>
                             <option value="lendo">Lendo</option>
                             <option value="lido">Lido</option>
@@ -134,6 +135,7 @@ if (file_exists('data/books.json')){
                         <input type="hidden" name="id" value="<?= $livro['id'] ?>">
         
                         <select name="categoria" id="">
+                            <option value="" selected disabled></option>
                             <option value="pretendo_ler">Pretendo ler</option>
                             <option value="lendo">Lendo</option>
                             <option value="lido">Lido</option>
@@ -167,6 +169,7 @@ if (file_exists('data/books.json')){
                         <input type="hidden" name="id" value="<?= $livro['id'] ?>">
         
                         <select name="categoria" id="">
+                            <option value="" selected disabled></option>
                             <option value="pretendo_ler">Pretendo ler</option>
                             <option value="lendo">Lendo</option>
                             <option value="lido">Lido</option>
