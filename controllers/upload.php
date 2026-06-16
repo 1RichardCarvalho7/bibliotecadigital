@@ -5,7 +5,9 @@ $nome_livro = $_POST['nome_livro'];
 $categoria = $_POST['categoria'];
 $arquivo_imagem = $_FILES['imagem'];
 if ($arquivo_imagem['error']!==0){
-    die('erro no upload');
+    $_SESSION['erro_upload'] = "Erro no upload!";
+    header('Location: ../biblioteca.php?popup=abrir');
+    exit;
 }
 $tipoDeArquivo = strtolower(
     pathinfo(
@@ -19,7 +21,7 @@ if(($tipoDeArquivo!=='png') && ($tipoDeArquivo!=='jpg')){
      exit;
 }
 
-$nomeDoArquivo = uniqid() .'.png'; // Cria um nome único para não substituir um arquivo com o mesmo nome
+$nomeDoArquivo = uniqid() .'.' . $tipoDeArquivo; // Cria um nome único para não substituir um arquivo com o mesmo nome
 
 move_uploaded_file(
     $arquivo_imagem['tmp_name'],
