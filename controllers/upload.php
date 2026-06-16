@@ -5,7 +5,9 @@ $nome_livro = $_POST['nome_livro'];
 $categoria = $_POST['categoria'];
 $arquivo_imagem = $_FILES['imagem'];
 if ($arquivo_imagem['error']!==0){
-    die('erro no upload');
+    $_SESSION['erro_upload'] = "Erro no upload!";
+    header('Location: ../biblioteca.php?popup=abrir');
+    exit;
 }
 $tipoDeArquivo = strtolower(
     pathinfo(
