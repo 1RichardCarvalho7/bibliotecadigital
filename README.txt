@@ -13,4 +13,5 @@ INSTRUÇÕES DE INSTALAÇÃO:
 - Extrair o arquivo "bibliolandy.zip"
 - Mover a pasta extraida (bibliotecadigital) para "C:\xampp\htdocs"
 - Executar o xampp
+- Ligar o Apache
 - Digitar, em qualquer navegador, "localhost/bibliotecadigital"
