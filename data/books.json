@@ -18,7 +18,7 @@
         "usuario": "richard",
         "nome": "Memórias do subsolo",
         "capa": "6a2fe6229eb07.png",
-        "categoria": "pretendo_ler"
+        "categoria": "lendo"
     },
     {
         "id": "6a2fe631d88de",
@@ -46,14 +46,14 @@
         "usuario": "richard",
         "nome": "O anticristo",
         "capa": "6a2fe693d47bb.png",
-        "categoria": "pretendo_ler"
+        "categoria": "lendo"
     },
     {
         "id": "6a2fe6cb4f411",
         "usuario": "richard",
         "nome": "Nascimento da tragédia",
         "capa": "6a2fe6cb4e5d6.png",
-        "categoria": "lendo"
+        "categoria": "pretendo_ler"
     },
     {
         "id": "6a2fe77499e33",
@@ -96,5 +96,19 @@
         "nome": "O castelo",
         "capa": "6a2fe8620675e.png",
         "categoria": "lendo"
+    },
+    {
+        "id": "6a30ac6a19ad2",
+        "usuario": "richard",
+        "nome": "O estrangeiro",
+        "capa": "6a30ac6a1823a.jpg",
+        "categoria": "pretendo_ler"
+    },
+    {
+        "id": "6a30adc82d71a",
+        "usuario": "richard",
+        "nome": "O mito de sísifo",
+        "capa": "6a30adc82d0c9.jpg",
+        "categoria": "pretendo_ler"
     }
 ]
