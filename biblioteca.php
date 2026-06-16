@@ -107,7 +107,7 @@ if (file_exists('data/books.json')){
                             <option value="lido">Lido</option>
                             <option value="remover">Remover</option>
                         </select>
-                        <button type="submit">Mudar</button>
+                        <button type="submit">✓</button>
                     </form>
                 </div>
             <?php endforeach; ?>
@@ -139,7 +139,7 @@ if (file_exists('data/books.json')){
                             <option value="lido">Lido</option>
                             <option value="remover">Remover</option>
                         </select>
-                        <button type="submit">Mudar</button>
+                        <button type="submit">✓</button>
                     </form>
                 </div>
             <?php endforeach; ?>
@@ -172,7 +172,7 @@ if (file_exists('data/books.json')){
                             <option value="lido">Lido</option>
                             <option value="remover">Remover</option>
                         </select>
-                        <button type="submit">Mudar</button>
+                        <button type="submit">✓</button>
                     </form>
                 </div>
             <?php endforeach; ?>
